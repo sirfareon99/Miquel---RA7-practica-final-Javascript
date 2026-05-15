@@ -1,0 +1,341 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repaso JavaScript - Examen</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Repaso de JavaScript</h1>
+            <p>Material para preparar el examen</p>
+        </div>
+    </header>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="#variables">Variables y tipos</a></li>
+            <li><a href="#operadores">Operadores</a></li>
+            <li><a href="#condicionales">Condicionales</a></li>
+            <li><a href="#bucles">Bucles</a></li>
+            <li><a href="#arrays">Arrays</a></li>
+            <li><a href="#funciones">Funciones</a></li>
+            <li><a href="#dom">DOM</a></li>
+            <li><a href="#eventos">Eventos</a></li>
+            <li><a href="#math">Math</a></li>
+            <li><a href="#strings">Strings</a></li>
+            <li><a href="#fechas">Fechas</a></li>
+            <li><a href="#formularios">Formularios</a></li>
+            <li><a href="#errores">Errores típicos</a></li>
+        </ul>
+    </nav>
+
+    <main class="contenido">
+        
+        <!-- Variables y tipos -->
+        <section id="variables" class="seccion">
+            <h2>1. Variables y tipos</h2>
+            <div class="explicacion">
+                <h3>Explicación</h3>
+                <p>Las variables, como en cualquier lenguaje de programación es un elemento que contiene un valor asignado en el mismo código o preguntando al usuario <strong>let</strong>, <strong>const</strong> y <strong>var</strong> (en clasehemos visto el let y const aunque en los test solo aparecía el var).</p>
+                <p>Los tipos principales son: string (texto), number (números), boolean (true/false), float(decimales), y otros más complejos.</p>
+                <!-- Cambia esta explicación si quieres -->
+            </div>
+            
+            <div class="ejemplo">
+                <h3>Ejemplo de código</h3>
+                <pre><code>let nombre = "María";
+const edad = 17;
+let esEstudiante = true;
+
+console.log(nombre + " tiene " + edad + " años"); </code></pre>
+            </div>
+            
+            <div class="explicacion">
+                <h3>Explicación del ejemplo</h3>
+                <p>Creamos tres variables de diferentes tipos y las mostramos por consola juntando el texto.</p>
+            </div>
+        </section>
+
+        <!-- Operadores -->
+        <section id="operadores" class="seccion">
+            <h2>2. Operadores</h2>
+            <div class="explicacion">
+                <h3>Explicación</h3>
+                <p>Los operadores nos permiten hacer operaciones con los datos: +, -, *, /, % (residuo), == (igual), &gt;, &lt;, etc. Existen operadores lógicos, de comparación, de asignación y aritmétricos</p>
+            </div>
+            
+            <div class="ejemplo">
+                <h3>Ejemplo de código</h3>
+                <pre><code>let a = 10;
+let b = 3;
+console.log(a + b);     // 13
+console.log(a % b);     // 1
+console.log(a > b);     // true</code></pre>
+            </div>
+            
+            <div class="explicacion">
+                <h3>Explicación del ejemplo</h3>
+                <p>Hacemos suma, resto y una comparación.</p>
+            </div>
+        </section>
+
+        <!-- Condicionales -->
+        <section id="condicionales" class="seccion">
+            <h2>3. Condicionales</h2>
+            <div class="explicacion">
+                <h3>Explicación</h3>
+                <p>EL If y Else es una estructura de control condicional en que se presenta una condición para que se ejecute la parte del código cuando dicha condicición sea cumplida. Siendo la primera if, si hay más else if y ya cuando no se cumpla ninguna el else</p>
+            </div>
+            
+            <div class="ejemplo">
+                <h3>Ejemplo de código</h3>
+                <pre><code>let nota = 8;
+
+if (nota >= 5) {
+    console.log("Aprobado");
+} else {
+    console.log("Suspenso");
+}</code></pre>
+            </div>
+            
+            <div class="explicacion">
+                <h3>Explicación del ejemplo</h3>
+                <p>Si la nota es 5 o más, dice "Aprobado", si no, "Suspenso".</p>
+            </div>
+        </section>
+
+        <!-- Bucles -->
+        <section id="bucles" class="seccion">
+            <h2>4. Bucles</h2>
+            <div class="explicacion">
+                <h3>Explicación</h3>
+                <p>Los bucles repiten código varias veces. Los más usados son <strong>for</strong> que funciona con un iterador que recorre el bucle desde un inicio hasta un final e incluyendo el como puede recorrer el bucle si va 1 en 1 o 2 en 2 saltando partes y <strong>while</strong> es un tipo de bucle que mientras se cumpla la condición asignada seguirá ejecutándose.</p>
+            </div>
+            
+            <div class="ejemplo">
+                <h3>Ejemplo de código</h3>
+                <pre><code>for (let i = 1; i <= 5; i++) {
+    console.log("Número: " + i);
+}</code></pre>
+            </div>
+            
+            <div class="explicacion">
+                <h3>Explicación del ejemplo</h3>
+                <p>Este bucle muestra los números del 1 al 5.</p>
+            </div>
+        </section>
+
+        <!-- Arrays -->
+        <section id="arrays" class="seccion">
+            <h2>5. Arrays</h2>
+            <div class="explicacion">
+                <h3>Explicación</h3>
+                <p>Un array es una lista de valores. Es un tipo de valor compuesto. Me gusta decir que es una variable con más de un valor en resumidas cuentas. Se pueden añadir, quitar o modificar elementos(los valores que tiene). Haydiferentes tipos, las listas que van en [] y se puede modificar. Las tuplas que van en () y una vez asignadas no se pueden modificar. Los sets que solo pueden tener valores únicos y va en {} y no están indexados. La indexación en una matriz se refiere a que cada elemento dentro de la misma tiene un valor oculto que indica la posición de la matriz siempre empezando por el valor 0. PD: Los Sets no tienen valores de indexación. </p>
+            </div>
+            
+            <div class="ejemplo">
+                <h3>Ejemplo de código</h3>
+                <pre><code>let frutas = ["manzana", "plátano", "naranja"];
+frutas.push("fresa");
+console.log(frutas.length);</code></pre>
+            </div>
+            
+            <div class="explicacion">
+                <h3>Explicación del ejemplo</h3>
+                <p>Creamos un array, añadimos una fruta más y mostramos cuántas hay.</p>
+            </div>
+
+            <div class="interactivo">
+                <h3>Prueba interactiva</h3>
+                <button id="btnAgregar">Agregar fruta</button>
+                <p id="listaFrutas">manzana, plátano, naranja</p>
+            </div>
+        </section>
+
+        <!-- Funciones -->
+        <section id="funciones" class="seccion">
+            <h2>6. Funciones</h2>
+            <div class="explicacion">
+                <h3>Explicación</h3>
+                <p>Las funciones son bloques de código reutilizable. Se declaran con <strong>function</strong>. Existen diferentes tipos de función, una función normal y corriente sería el nombre de la función e indicar los parámetros necesarios si se requiere. Y luego funciones de flecha hereda el contexto de donde fue creada y no tienen argumentos</p>
+            </div>
+            
+            <div class="ejemplo">
+                <h3>Ejemplo de código</h3>
+                <pre><code>function sumar(x, y) {
+    return x + y;
+}
+
+console.log(sumar(5, 3)); // 8</code></pre>
+            </div>
+            
+            <div class="explicacion">
+                <h3>Explicación del ejemplo</h3>
+                <p>Función que recibe dos números y devuelve su suma.</p>
+            </div>
+        </section>
+
+        <!-- DOM -->
+        <section id="dom" class="seccion">
+            <h2>7. DOM</h2>
+            <div class="explicacion">
+                <h3>Explicación</h3>
+                <p>El DOM (Document Object Model) es como el navegador es capaz de representar una página web para que JavaScript interactue con esta..</p>
+            </div>
+            
+            <div class="ejemplo">
+                <h3>Ejemplo de código</h3>
+                <pre><code>document.getElementById("titulo").textContent = "Nuevo texto";</code></pre>
+            </div>
+            
+            <div class="explicacion">
+                <h3>Explicación del ejemplo</h3>
+                <p>Cambia el texto de un elemento con id "titulo".</p>
+            </div>
+
+            <div class="interactivo">
+                <h3>Prueba DOM</h3>
+                <button id="btnCambiarTexto">Cambiar título principal</button>
+            </div>
+        </section>
+
+        <!-- Eventos -->
+        <section id="eventos" class="seccion">
+            <h2>8. Eventos</h2>
+            <div class="explicacion">
+                <h3>Explicación</h3>
+                <p>Los eventos son acciones del usuario (click, escribir, mover ratón...) a las qque Javascript puede responder con listeners.</p>
+            </div>
+            
+            <div class="ejemplo">
+                <h3>Ejemplo de código</h3>
+                <pre><code>boton.addEventListener("click", function() {
+    alert("¡Hola!");
+});</code></pre>
+            </div>
+            
+            <div class="explicacion">
+                <h3>Explicación del ejemplo</h3>
+                <p>Cuando se hace click en el botón, muestra un mensaje.</p>
+            </div>
+
+            <div class="interactivo">
+                <h3>Prueba Eventos</h3>
+                <button id="btnSaludar">Haz click aquí</button>
+                <p id="mensajeEvento"></p>
+            </div>
+        </section>
+
+        <!-- Math -->
+        <section id="math" class="seccion">
+            <h2>9. Math</h2>
+            <div class="explicacion">
+                <h3>Explicación</h3>
+                <p>El objeto Math tiene funciones matemáticas como redondear (floor si es redondear para abajo, ceil si es redondear para arriba) , potencia (pow), número aleatorio (random), etc.</p>
+            </div>
+            
+            <div class="ejemplo">
+                <h3>Ejemplo de código</h3>
+                <pre><code>console.log(Math.random());        // número entre 0 y 1
+console.log(Math.floor(4.7));     // 4
+console.log(Math.pow(2, 3));      // 8</code></pre>
+            </div>
+            
+            <div class="explicacion">
+                <h3>Explicación del ejemplo</h3>
+                <p>Muestra número aleatorio, redondeo hacia abajo y potencia.</p>
+            </div>
+        </section>
+
+        <!-- Strings -->
+        <section id="strings" class="seccion">
+            <h2>10. Strings</h2>
+            <div class="explicacion">
+                <h3>Explicación</h3>
+                <p>Los strings son textos que van en "". Podemos unirlos, sacar partes, convertir a mayúsculas, etc.</p>
+            </div>
+            
+            <div class="ejemplo">
+                <h3>Ejemplo de código</h3>
+                <pre><code>let texto = "Hola mundo";
+console.log(texto.toUpperCase());
+console.log(texto.length);</code></pre>
+            </div>
+            
+            <div class="explicacion">
+                <h3>Explicación del ejemplo</h3>
+                <p>Convierte el texto a mayúsculas y muestra su longitud.</p>
+            </div>
+        </section>
+
+        <!-- Fechas -->
+        <section id="fechas" class="seccion">
+            <h2>11. Fechas</h2>
+            <div class="explicacion">
+                <h3>Explicación</h3>
+                <p>Date permite usar fechas y horas como datos.</p>
+            </div>
+            
+            <div class="ejemplo">
+                <h3>Ejemplo de código</h3>
+                <pre><code>let hoy = new Date();
+console.log(hoy.getFullYear());</code></pre>
+            </div>
+            
+            <div class="explicacion">
+                <h3>Explicación del ejemplo</h3>
+                <p>Crea una fecha con la fecha actual y saca el año.</p>
+            </div>
+        </section>
+
+        <!-- Formularios -->
+        <section id="formularios" class="seccion">
+            <h2>12. Formularios</h2>
+            <div class="explicacion">
+                <h3>Explicación</h3>
+                <p>Los formularios en Javascript son elementos de HTML que el usuario introdujo datos que envió para procesarlos. Se puede validar, manipular esos datos antes de enviarlos sin que haya que recargar página web Se puede acceder a los valores de los campos. Validadiones. Evitar el envio del formulario si hay errores. Mostrar mensajes al usuario. Enviar datos de forma dinámica como con fetch. .</p>
+            </div>
+            
+            <div class="ejemplo">
+                <h3>Ejemplo interactivo de formulario</h3>
+                <form id="miFormulario">
+                    <label>Nombre: <input type="text" id="nombreInput"></label><br><br>
+                    <button type="button" id="btnEnviar">Enviar</button>
+                </form>
+                <p id="resultadoFormulario"></p>
+            </div>
+        </section>
+
+        <!-- Errores típicos -->
+        <section id="errores" class="seccion">
+            <h2>13. Errores típicos</h2>
+            <div class="explicacion">
+                <h3>Explicación</h3>
+                <p>Olvidar punto y coma, usar = en vez de ==, no declarar variables, intentar acceder a elementos antes de que cargue la página, etc.</p>
+            </div>
+            
+            <div class="ejemplo">
+                <h3>Ejemplos comunes</h3>
+                <ul>
+                    <li>Olvidar cerrar comillas o llaves</li>
+                    <li>Usar <code>==</code> vs <code>=</code></li>
+                    <li>No usar <code>let/const</code></li>
+                    <li>Errores de mayúsculas/minúsculas</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Repaso JavaScript - Proyecto final RA 7</p>
+        <button id="btnVolverArriba">Volver arriba</button>
+    </footer>
+
+    <script src="repaso.js"></script>
+</body>
+</html>
